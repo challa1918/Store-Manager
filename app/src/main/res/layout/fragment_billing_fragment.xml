@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".billing_fragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/bgbilling"
+            android:layout_height="270dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/profile"
+                android:layout_width="100dp"
+                android:layout_height="500dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.948"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.106">
+
+            </com.mikhaellopez.circularimageview.CircularImageView>
+
+            <TextView
+                android:id="@+id/salestoday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="44dp"
+                android:text="Sales Today: "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/profile"
+                app:layout_constraintHorizontal_bias="0.099"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/totalsales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:text="Total Sales: "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/profile"
+                app:layout_constraintHorizontal_bias="0.094"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/salestoday">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/seeprofits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="see profits?"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/profile"
+                app:layout_constraintHorizontal_bias="0.079"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/totalsales">
+
+            </TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="20dp"
+            android:elevation="30dp"
+            android:padding="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="-30dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:id="@+id/billinglayout"
+                android:orientation="horizontal"
+                android:background="?attr/selectableItemBackground"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Generate Bill"
+                    android:textSize="20dp"
+                    android:layout_margin="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.021"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end"
+                    android:src="@drawable/next"
+                    android:id="@+id/billnext"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.908"
+                    app:layout_constraintStart_toEndOf="@+id/textView3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.592">
+
+                </ImageView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:id="@+id/transactionslayout"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transactions"
+                    android:layout_margin="20dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.021"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/transactionnext"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/next"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.905"
+                    app:layout_constraintStart_toEndOf="@+id/ttext"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </ImageView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/expandable"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ttext">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:padding="2dp"
+                        android:textStyle="bold"
+                        android:text="Recent Transactions"
+                        android:textColor="#00BCD4"
+                        android:textSize="14dp"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.092"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.03">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="2dp"
+                        android:text="More"
+                        android:textStyle="bold"
+                        android:textColor="#00BCD4"
+                        android:textSize="14dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.831"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.029">
+
+                    </TextView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recent_transaction_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:background="#2B194A"
+                        android:clickable="true"
+                        android:outlineProvider="background"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView6"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:listitem="@layout/transaction_item">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="horizontal"
+                    android:id="@+id/creditlayout"
+                    android:clickable="true"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Creditors"
+                        android:layout_margin="20dp"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.021"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:src="@drawable/next"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.921"
+                        app:layout_constraintStart_toEndOf="@+id/textView"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.592">
+
+                    </ImageView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>

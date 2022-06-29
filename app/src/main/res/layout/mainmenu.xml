@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bottomsheet_background"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="100dp"
+                android:layout_height="4dp"
+                android:background="@drawable/divider_color"
+                android:padding="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/menu"
+                android:textColor="@color/black"
+                android:textSize="20sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/house" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"
+                android:text="@string/home"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/billing_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/bill" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"
+                android:text="@string/billing"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cart_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/trolley" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"
+                android:text="@string/Cart"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/transaction_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/lending" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"
+                android:text="@string/transactions"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/creditor_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/creditor_menu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"
+                android:text="@string/creditors"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/Share_Application"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/sharing" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"
+                android:text="@string/share"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/logout_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/logout" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"
+                android:text="Logout"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

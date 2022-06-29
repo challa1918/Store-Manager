@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/chatlayout"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:layout_weight="1"
+        android:id="@+id/given"
+        android:layout_marginLeft="7dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:background="@drawable/given"
+            android:padding="20sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@+id/giventext"
+            android:text="jhjvhdfvjdfvg"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="00:00"
+            android:layout_marginLeft="7dp"
+            android:id="@+id/giventime"
+            android:textSize="12dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/inactive_tab_color"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:layout_marginTop="5dp"
+        android:visibility="visible"
+        android:id="@+id/taken"
+        android:layout_marginRight="7dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        tools:ignore="RtlHardcoded">
+        <TextView
+            android:layout_width="wrap_content"
+            android:background="@drawable/taken"
+            android:padding="20sp"
+            android:textColor="@color/white"
+            android:id="@+id/takentext"
+            android:gravity="center"
+            android:text="jhjvhdfvjdfvg"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="00:00"
+            android:textSize="12dp"
+            android:id="@+id/takentime"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/inactive_tab_color"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

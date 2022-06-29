@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Creditor_Account">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#F67850"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:background="#F67850"
+            android:padding="3dp"
+            android:id="@+id/creditor_toolbar"
+            android:layout_height="70dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:id="@+id/creditback"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/back"
+                android:layout_height="40dp"
+                app:tint="@color/white">
+
+            </ImageView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="45dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="#0A89ED"
+                android:layout_height="45dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="RR"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:id="@+id/creditinName"
+                    android:textColor="@color/white"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Creditor Name"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:id="@+id/creditName"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </androidx.appcompat.widget.Toolbar>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Total Credit Amount :0000 "
+            android:textColor="@color/white"
+            android:id="@+id/camount"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30sp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="60dp"
+        tools:listitem="@layout/chat_item"
+        android:id="@+id/caccount"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="-60dp"
+        android:gravity="center_vertical"
+        android:layout_height="60dp">
+        <EditText
+            android:layout_width="200dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:id="@+id/inputamount"
+            android:layout_marginLeft="5dp"
+            android:textAlignment="center"
+            android:background="@drawable/moneyedittext"
+            android:layout_height="40dp">
+
+        </EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="taken"
+            android:id="@+id/takenbutton"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content">
+
+        </Button>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:backgroundTint="@color/black"
+           android:orientation="vertical"
+           android:layout_marginLeft="10dp"
+           android:gravity="center_vertical"
+           android:layout_height="match_parent">
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:padding="5dp"
+               android:orientation="horizontal"
+               android:layout_height="wrap_content">
+               <com.mikhaellopez.circularimageview.CircularImageView
+                   android:layout_width="15dp"
+                   android:background="#2196F3"
+                   android:layout_height="15dp">
+
+               </com.mikhaellopez.circularimageview.CircularImageView>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:text="Given Credit"
+                   android:textSize="10dp"
+                   android:layout_marginLeft="3dp"
+                   android:layout_height="wrap_content">
+
+               </TextView>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:orientation="horizontal"
+               android:padding="5dp"
+               android:layout_height="wrap_content">
+               <com.mikhaellopez.circularimageview.CircularImageView
+                   android:layout_width="15dp"
+                   android:background="#4CAF50"
+                   android:layout_height="15dp">
+
+               </com.mikhaellopez.circularimageview.CircularImageView>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:text="Taken Amount"
+                   android:textSize="10dp"
+                   android:layout_marginLeft="3dp"
+                   android:layout_height="wrap_content">
+
+               </TextView>
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

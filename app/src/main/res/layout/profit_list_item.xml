@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_height="70dp">
+    <TextView
+        android:layout_width="250dp"
+        android:text="2020-00-00"
+        android:layout_weight="20"
+        android:textSize="20dp"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:id="@+id/pdate"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="xxxx"
+        android:textAlignment="textEnd"
+        android:id="@+id/pamount"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_red_light"
+        android:gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        tools:ignore="RtlCompat">
+
+    </TextView>
+
+
+</LinearLayout>

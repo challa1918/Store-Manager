@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    tools:context=".Profit">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/profit_bg"
+        android:layout_height="150dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:src="@drawable/back"
+            android:layout_height="35dp"
+            android:id="@+id/profit_back"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            app:tint="@color/white">
+
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Today's profit : "
+            android:textStyle="bold"
+            android:id="@+id/todays_profit"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Total profit : "
+            android:textStyle="bold"
+            android:id="@+id/total_profit"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:id="@+id/profitlist"
+        tools:listitem="@layout/profit_list_item"
+        android:layout_marginTop="5dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

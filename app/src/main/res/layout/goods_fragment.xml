@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/li"
+    android:name="com.example.gumastha.ItemFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="35dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/menu"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:id="@+id/menu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/profile"
+                app:layout_constraintHorizontal_bias="0.031"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+            </ImageView>
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="12dp"
+                android:maxWidth="250dp"
+                android:layout_marginRight="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/profile"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:queryHint="@string/searchtext">
+
+            </androidx.appcompat.widget.SearchView>
+
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/login_background"
+                android:src="@drawable/creditor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="5dp"
+            style="@style/Theme.MaterialComponents.DayNight"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="@android:color/white"
+            android:textColor="#FF9800"
+            android:theme="@style/Theme.MaterialComponents.DayNight"
+            android:elevation="30dp"
+            android:id="@+id/addnew"
+            app:iconTint="#51AAF1"
+            android:text="@string/addtext"
+            app:icon="@drawable/pencil">
+
+        </com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton>
+
+        <Spinner
+            android:layout_width="160dp"
+            android:layout_margin="5dp"
+            android:id="@+id/filter"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent">
+
+        </Spinner>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/list"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:name="com.example.gumastha.ItemFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+       app:layoutManager="LinearLayoutManager"
+        tools:context=".GoodsFragment"
+          tools:listitem="@layout/product_list_item"
+         />
+
+</LinearLayout>
+
+
+
+
+
+
+
+

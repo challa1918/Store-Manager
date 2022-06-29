@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckOut">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="35dp"
+            android:id="@+id/cback"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:src="@drawable/back"
+            app:tint="@color/black"></ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_billing"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="end"
+                android:layout_marginLeft="-20dp"
+                android:textColor="@color/black">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar2">
+        <TextView
+            android:id="@+id/billpname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/billquant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Quantity"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/billprice"
+            app:layout_constraintHorizontal_bias="0.453"
+            app:layout_constraintStart_toEndOf="@+id/billpname"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/billprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022">
+
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/billingcart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Amount : "
+        android:id="@+id/totalamount"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:paddingLeft="70dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/billingcart">
+
+    </TextView>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/paymentmode"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalamount"
+        app:layout_constraintVertical_bias="0.029">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:text="@string/online"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:id="@+id/online"
+        android:layout_weight="1"
+            android:background="@drawable/edittext_background"
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:text="@string/offline"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+           android:layout_margin="5dp"
+            android:id="@+id/offline"
+            android:background="@drawable/edittext_background"
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:text="@string/credit"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:id="@+id/credit"
+            android:background="@drawable/edittext_background"
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/checkoutfinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:elevation="20dp"
+        android:focusable="true"
+        android:padding="15dp"
+        android:text="Check Out"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.259"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paymentmode"
+        app:layout_constraintVertical_bias="0.059">
+
+    </Button>
+
+    <Button
+        android:id="@+id/addtocredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:elevation="20dp"
+        android:focusable="true"
+        android:padding="15dp"
+        android:text="@string/add_to_credit"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paymentmode"
+        app:layout_constraintVertical_bias="0.059">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/send_bill"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#FF9800"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:text="Send bill to the customer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkoutfinal"
+        app:layout_constraintVertical_bias="0.167">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

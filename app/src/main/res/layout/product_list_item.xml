@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:id="@+id/container"
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imgContact"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:background="@android:color/black"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:clickable="true"
+        android:padding="5dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        app:cardCornerRadius="90dp">
+
+
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/pimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:src="@android:drawable/ic_menu_edit"
+                android:textAlignment="center"
+                android:background="@android:color/transparent"
+                android:textSize="23dp"
+                app:civ_border="true"
+                android:clickable="true"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/black"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat">
+
+            </com.mikhaellopez.circularimageview.CircularImageView>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginEnd="85dp"
+        android:layout_toEndOf="@+id/imgContact"
+        android:layout_toRightOf="@+id/imgContact"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="15dp"
+            android:text="Helo World"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:id="@+id/productName"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:text="Available: 10"
+                android:id="@+id/stock"
+                android:textColor="@color/black"
+                android:textSize="14sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="306dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:text="10RS/-"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/status"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="306dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:background="#C12F2F"
+        android:textSize="25px"
+        android:text="expiring soon"
+        android:padding="5px"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/sep2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="306dp"
+        android:layout_marginLeft="306dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:text="\u20B9"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold">
+
+    </TextView>
+
+</RelativeLayout>

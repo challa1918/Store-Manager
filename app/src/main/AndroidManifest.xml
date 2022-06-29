@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gumastha">
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Gumastha">
+        <activity android:name=".Profit"
+            android:screenOrientation="portrait"
+            android:theme="@style/FUllScreen"></activity>
+        <activity
+            android:name=".Add_To_Creditor"
+            android:screenOrientation="portrait"
+            android:theme="@style/FUllScreen" />
+        <activity
+            android:name=".Creditor_Account"
+            android:screenOrientation="portrait"
+            android:theme="@style/FUllScreen" />
+        <activity
+            android:name=".Transaction_Display"
+            android:screenOrientation="portrait"
+            android:theme="@style/FUllScreen" />
+        <activity
+            android:name=".Creditors"
+            android:label="@string/title_activity_creditors"
+            android:screenOrientation="portrait"
+            android:theme="@style/FUllScreen" />
+        <activity
+            android:name=".Transactions"
+            android:screenOrientation="portrait"
+            android:theme="@style/FUllScreen" />
+        <activity
+            android:name=".CheckOut"
+            android:screenOrientation="portrait"
+            android:theme="@style/FUllScreen" />
+        <activity android:name=".CartBuilding" />
+        <activity
+            android:name=".Add_Product"
+            android:screenOrientation="portrait"
+            android:theme="@style/FUllScreen" />
+        <activity
+            android:name=".View.Home"
+            android:screenOrientation="portrait"
+            android:theme="@style/FUllScreen" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FUllScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".capture"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/path" />
+        </provider>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

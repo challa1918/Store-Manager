@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "180137508504",
+    "project_id": "stockmanager-54d66",
+    "storage_bucket": "stockmanager-54d66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:180137508504:android:4aaff6c2cb838352f71aed",
+        "android_client_info": {
+          "package_name": "com.example.gumastha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "180137508504-vefgogl4i8jngjuullpqrheiinvf6psf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHA2Xc2G8Kk12XfDtXbAQsOhj2OeY3M5U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "180137508504-vefgogl4i8jngjuullpqrheiinvf6psf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:180137508504:android:e350d54a62c390acf71aed",
+        "android_client_info": {
+          "package_name": "com.example.stockmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "180137508504-h4bs8mt79mcrvkkmu4t9jc5m8emf9f37.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.stockmanager",
+            "certificate_hash": "6a6b317b9ba306b86bc1dd64ede98df5134165b2"
+          }
+        },
+        {
+          "client_id": "180137508504-vefgogl4i8jngjuullpqrheiinvf6psf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHA2Xc2G8Kk12XfDtXbAQsOhj2OeY3M5U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "180137508504-vefgogl4i8jngjuullpqrheiinvf6psf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

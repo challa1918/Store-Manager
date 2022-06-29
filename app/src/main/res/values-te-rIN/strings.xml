@@ -1,0 +1,28 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="app_name">గుమస్తా...</string>
+    <string name="welcome">స్వాగతం</string>
+    <string name="logintext">కొనసాగించడానికి దయచేసి లాగిన్ అవ్వండి</string>
+    <string name="searchtext">వెతకండి...</string>
+    <string name="addtext">క్రొత్త వస్తువును జోడించండి</string>
+    <string name="takepic">ఫోటో తీసి అప్‌లోడ్ చేయండి</string>
+    <string name="uploadgallery">గ్యాలరీ నుండి అప్‌లోడ్ చేయండి</string>
+    <string name="goods">వస్తువులు</string>
+    <string name="billing">బిల్లింగ్</string>
+    <string name="pnamehint">వస్తువు పేరు</string>
+    <string name="cphint">కొన్న ధర</string>
+    <string name="sphint">అమ్మకం ధర</string>
+    <string name="expiryhint">గడువు (నెలలు)</string>
+    <string name="stockhint">అందుబాటులో ఉన్న స్టాక్</string>
+    <string name="mfdhint">తయారీ తేదీ (YYYY-MM-DD)</string>
+    <string name="codehint">బార్‌కోడ్ సంఖ్యను స్కాన్ చేయండి లేదా నమోదు చేయండి</string>
+    <string name="addButton">స్టాక్‌కు జోడించండి</string>
+    <string-array name="units_array">
+        <item>కొలత యూనిట్లు</item>
+        <item>కిలొగ్రామ్</item>
+        <item>సంఖ్య</item>
+    </string-array>
+
+
+</resources>

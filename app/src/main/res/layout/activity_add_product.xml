@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context=".Add_Product">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back"
+            android:clickable="true"
+            android:id="@+id/back"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:tint="@color/black">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/pencil">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addtext"
+            android:textSize="20dp"
+
+            android:textColor="@color/black">
+
+        </TextView>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/circularImageView"
+            android:layout_width="216dp"
+            android:layout_height="147dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/bulb"
+            app:civ_border_color="#FFEB3B"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#B53F57"
+            app:civ_shadow_radius="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.462"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.137" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/login_background"
+            android:gravity="center_vertical"
+            android:hint="@string/pnamehint"
+            android:padding="7dp"
+            android:id="@+id/productName"
+            android:inputType="text"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.456"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circularImageView"
+            app:layout_constraintVertical_bias="0.0">
+
+        </EditText>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.034">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/login_background"
+            android:hint="@string/cphint"
+            android:inputType="numberDecimal"
+            android:id="@+id/cp"
+            android:padding="7dp"
+            android:textSize="17dp">
+
+        </EditText>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:id="@+id/sp"
+            android:background="@drawable/login_background"
+            android:hint="@string/sphint"
+            android:inputType="numberDecimal"
+            android:padding="7dp"
+            android:textSize="17dp">
+
+        </EditText>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/login_background"
+            android:hint="@string/expiryhint"
+            android:inputType="number"
+            android:id="@+id/months"
+            android:padding="7dp"
+            android:textSize="17dp">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+
+        android:layout_height="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.058">
+
+        <EditText
+            android:id="@+id/stock"
+            android:layout_width="wrap_content"
+            android:inputType="number"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/login_background"
+            android:gravity="center_vertical"
+            android:hint="@string/stockhint"
+            android:padding="10dp">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/login_background"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:layout_constraintVertical_bias="0.058">
+
+        <ImageView
+            android:id="@+id/calendar"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/schedule">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/mfd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/mfdhint">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/login_background"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.058">
+
+        <ImageView
+            android:id="@+id/bcr"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/barcode">
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:textSize="16dp"
+            android:padding="5dp"
+            android:hint="@string/codehint">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.058">
+
+       <Spinner
+           android:layout_width="wrap_content"
+           android:id="@+id/units"
+           android:layout_margin="10dp"
+           android:padding="10dp"
+           android:background="@drawable/login_background"
+           android:layout_height="match_parent">
+
+       </Spinner>
+
+       <Spinner
+           android:layout_width="wrap_content"
+           android:id="@+id/categories"
+           android:layout_margin="10dp"
+           android:padding="10dp"
+           android:background="@drawable/login_background"
+           android:layout_height="match_parent">
+
+       </Spinner>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/addtostore"
+        style="@style/Theme.MaterialComponents.DayNight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:elevation="30dp"
+        android:text="@string/addButton"
+        android:layout_marginBottom="30dp"
+        android:textColor="#FF9800"
+        android:theme="@style/Theme.MaterialComponents.DayNight"
+        app:icon="@drawable/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.261">
+
+    </com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

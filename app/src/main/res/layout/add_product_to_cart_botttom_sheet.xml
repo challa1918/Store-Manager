@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:background="@drawable/bottomsheet_background"
+    android:layout_height="200dp">
+
+    <ImageView
+        android:id="@+id/bsproduct"
+        android:layout_width="76dp"
+        android:layout_height="93dp"
+        android:src="@drawable/edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.504"></ImageView>
+
+    <TextView
+        android:id="@+id/bspname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:text="Product Name"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.117">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/item_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="40dp"
+        android:text="0"
+        android:textSize="60dp"
+        android:visibility="visible"
+        android:textColor="@android:color/holo_green_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/plus"
+        app:layout_constraintTop_toBottomOf="@+id/bspname"
+        app:layout_constraintVertical_bias="0.0">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/plus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="90dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_marginLeft="30dp"
+        android:text="+1"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="35dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/item_number"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.242"
+        app:tint="@android:color/holo_red_light">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/minus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="90dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:text="-1"
+        android:layout_marginRight="30dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="35dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item_number"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/bsproduct"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.242"
+        app:tint="@android:color/holo_red_light">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/inputquantity"
+        android:layout_width="150dp"
+        android:hint="@string/grams"
+        android:layout_height="60dp"
+        android:textAlignment="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="number"
+        android:padding="10dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toEndOf="@+id/bsproduct"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25">
+
+    </EditText>
+
+    TextView
+        android:id="@+id/grams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="40dp"
+        android:padding="5dp"
+        android:text="@string/grams"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toEndOf="@+id/inputquantity"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:id="@+id/addtocart"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bspname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="100dp"
+            android:layout_height="4dp"
+            android:background="@drawable/divider_color"
+            app:layout_constraintBottom_toTopOf="@+id/bspname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/quant_in_amount"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/delete_product"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toEndOf="@+id/inputquantity"
+        app:layout_constraintTop_toBottomOf="@+id/addtocart"
+        app:layout_constraintVertical_bias="0.17">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/in_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="In Amount"
+        android:textSize="17dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inputquantity"
+        app:layout_constraintTop_toBottomOf="@+id/quant_in_amount"
+        app:layout_constraintVertical_bias="0.179">
+
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

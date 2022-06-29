@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/bottomsheet_background"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:gravity="center_vertical"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Stock avaiable : 2000"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/dispname"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/dispimage"
+            android:src="@drawable/bill"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="-20dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Code:12345678910"
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:id="@+id/discode"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:src="@drawable/copy"
+                    android:padding="3dp"
+                    android:id="@+id/copycode"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="20dp"
+                    app:tint="@android:color/holo_red_light">
+
+                </ImageView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Selling Price : 20000"
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:id="@+id/dissp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:src="@drawable/edit"
+                    android:padding="3dp"
+                    android:clickable="true"
+                    android:id="@+id/editsp"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="20dp">
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Cost Price : 2000"
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:id="@+id/discp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:src="@drawable/edit"
+                    android:padding="3dp"
+                    android:clickable="false"
+                    android:id="@+id/editcp"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="20dp"
+                    app:tint="@color/inactive_tab_color">
+
+                </ImageView>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Expiry : dd/mm/yyyy"
+                android:padding="5dp"
+                android:id="@+id/disexp"
+                android:textSize="15dp"
+                android:layout_height="wrap_content">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Stock avaiable : 2000"
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:id="@+id/disstock"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:src="@drawable/edit"
+                    android:padding="3dp"
+                    android:clickable="true"
+                    android:id="@+id/editstock"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="20dp">
+
+                </ImageView>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Category: Flour"
+                android:padding="5dp"
+                android:id="@+id/discat"
+                android:textSize="15dp"
+                android:layout_height="wrap_content">
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/addtocartbg"
+        android:layout_height="wrap_content"
+       >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/disatc"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:padding="10dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Add To Cart"
+                android:textSize="14dp"
+                android:id="@+id/atctext"
+                android:clickable="true"
+                android:onClick="addToCart"
+                android:background="?attr/selectableItemBackground"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_height="wrap_content">
+            </TextView>
+            <ImageView
+                android:layout_width="25dp"
+                android:src="@drawable/carts"
+                android:clickable="true"
+                android:onClick="addToCart"
+                android:id="@+id/atcimg"
+                android:background="?attr/selectableItemBackground"
+                android:layout_marginLeft="60dp"
+                android:layout_height="25dp">
+
+            </ImageView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/delete_product"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/disdelete"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:padding="10dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Delete Product"
+                android:textSize="14dp"
+                android:id="@+id/deletetext"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content">
+            </TextView>
+            <ImageView
+                android:layout_width="25dp"
+                android:src="@drawable/deleteproduct"
+                android:clickable="true"
+                android:id="@+id/deleteimg"
+                android:background="?attr/selectableItemBackground"
+                android:layout_marginLeft="50dp"
+                android:layout_height="25dp"
+                app:tint="@color/white">
+
+            </ImageView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

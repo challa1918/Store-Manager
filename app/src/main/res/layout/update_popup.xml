@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+
+    android:layout_height="220dp">
+        <EditText
+            android:id="@+id/popnew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Enter updated value"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.579"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.425" />
+
+        <EditText
+            android:id="@+id/popold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Enter name"
+            android:textAllCaps="true"
+            android:inputType="textPersonName"
+            android:textSize="24sp"
+           />
+
+        <Button
+            android:id="@+id/popupdate"
+            android:layout_width="159dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="48dp"
+            android:text="Update Field"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.574"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/popold"
+            app:layout_constraintVertical_bias="0.839" />
+
+
+
+
+</LinearLayout>
