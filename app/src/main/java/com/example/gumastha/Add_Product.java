@@ -67,7 +67,7 @@ public class Add_Product extends AppCompatActivity implements AdapterView.OnItem
     String[] units ;
     String[] categories ;
     String[] spincategories ;
-
+// This line is added to demo
     @SuppressLint("WrongConstant")
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
